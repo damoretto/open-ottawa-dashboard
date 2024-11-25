@@ -5,11 +5,7 @@ import CensusDashboard from './Dashboard/Dashboard.js'; // Adjust path if needed
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <h1>Census Data Dashboard</h1>
-            </header>
-            {/* Render the CensusDashboard component */}
-            <CensusDashboard />
+          <CensusDashboard />
         </div>
     );
 }
