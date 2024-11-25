@@ -1,0 +1,56 @@
+/* Container for the dashboard layout */
+.dashboard-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items in a row */
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif;
+}
+
+/* Main content area */
+.main-content {
+    flex: 3; /* Take up 3 parts of the container width */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Filter pane on the right */
+.filter-pane {
+    flex: 1; /* Take up 1 part of the container width */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-left: 1px solid #ddd; /* Add a subtle border */
+    overflow-y: auto; /* Enable scrolling if filters exceed the viewport height */
+}
+
+/* Individual filter items */
+.filter-item {
+    margin-bottom: 15px; /* Add space between filter items */
+}
+
+.filter-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.filter-item select {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
